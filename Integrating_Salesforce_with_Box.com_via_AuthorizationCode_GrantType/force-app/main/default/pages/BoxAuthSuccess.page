@@ -1,0 +1,13 @@
+<apex:page controller="BoxAuthController" action="{! getAccessToken}">
+    {! body}
+    <table>
+        <apex:repeat value="{!dataList }" var="record">
+            <tr>
+                <td>{! record.id_x}</td>
+                <td> {! record.type_x}</td>
+                <td> {! record.name_x}</td>
+            </tr>
+    	</apex:repeat>
+    </table>
+    
+</apex:page>
